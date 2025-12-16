@@ -304,6 +304,6 @@ SKU2,Book,99.0,books
         items=[OrderItem("SKU1", 2), OrderItem("SKU2", 1)],
         coupon_code="SAVE10",
     )
-
+    print ("your noisy")
     print(process_order(order, inv, acct))
     print("your code is ready")
