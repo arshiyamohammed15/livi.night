@@ -1,0 +1,4 @@
+p2
+def is_even(n: int) -> bool:
+    # BUG: reversed logic
+    return n % 2 != 0

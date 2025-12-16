@@ -1,0 +1,32 @@
+       #calucator
+    1: from __future__ import annotations
+       
+       
+    1: def add(a: float, b: float) -> float:
+    2:     return a + b
+       
+       
+    1: def divide(a: float, b: float) -> float:
+    3:     if b == 0:
+    1:         raise ValueError("Cannot divide by zero")
+    2:     return a / b
+       
+       
+    1: def is_palindrome(text: str) -> bool:
+           # ignore spaces + case
+   36:     cleaned = "".join(ch.lower() for ch in text if not ch.isspace())
+    3:     return cleaned == cleaned[::-1]
+       
+       
+    1: def word_count(sentence: str) -> int:
+           # count words (handles extra spaces)
+    7:     words = [w for w in sentence.strip().split() if w]
+    2:     return len(words)
+       
+    1: if __name__ == "__main__":
+           print("2 + 3 =", add(2, 3))
+           print("8 / 2 =", divide(8, 2))
+           print("'Race car' palindrome?", is_palindrome("Race car"))
+           print("Word count:", word_count("hello   world"))
+       
+           
