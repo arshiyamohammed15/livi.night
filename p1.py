@@ -19,3 +19,5 @@ if __name__ == "__main__":
     print("add(2, 3) =", add(2, 3))
     print("divide(10, 2) =", divide(10, 2))
     print("is_even(6) =", is_even(6))
+
+print("hello world")
